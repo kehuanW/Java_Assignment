@@ -3,39 +3,41 @@ import java.util.Scanner;
 public class YourBill {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
 
         //Scanner the name, quantity and price of item 1
+        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Input name of item 1:");
-        String item1Name = scanner.nextLine();
+        String item1Name = scanner1.nextLine();
 
         System.out.println("Input quantity of item 1:");
-        long item1Quantity = scanner.nextLong();
+        long item1Quantity = scanner1.nextLong();
 
         System.out.println("Input price of item 1:");
-        double item1Price = scanner.nextDouble();
+        double item1Price = scanner1.nextDouble();
 
 
         //Scanner the name, quantity and price of item 2
+        Scanner scanner2 = new Scanner(System.in);
         System.out.println("Input name of item 2:");
-        String item2Name = scanner.nextLine();
+        String item2Name = scanner2.nextLine();
 
         System.out.println("Input quantity of item 2:");
-        long item2Quantity = scanner.nextLong();
+        long item2Quantity = scanner2.nextLong();
 
         System.out.println("Input price of item 2:");
-        double item2Price = scanner.nextDouble();
+        double item2Price = scanner2.nextDouble();
 
 
         //Scanner the name, quantity and price of item 3
+        Scanner scanner3 = new Scanner(System.in);
         System.out.println("Input name of item 3:");
-        String item3Name = scanner.nextLine();
+        String item3Name = scanner3.nextLine();
 
         System.out.println("Input quantity of item 3:");
-        long item3Quantity = scanner.nextLong();
+        long item3Quantity = scanner3.nextLong();
 
         System.out.println("Input price of item 3:");
-        double item3Price = scanner.nextDouble();
+        double item3Price = scanner3.nextDouble();
 
 
         //calculate each item total price
@@ -61,7 +63,6 @@ public class YourBill {
         //Output result
         //Title
         System.out.println("Your bill:");
-        System.out.println();
         System.out.println();
 
         //1st line: attributes
