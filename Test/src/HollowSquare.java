@@ -15,7 +15,7 @@ public class HollowSquare {
 
         int size = 10;
 
-        //第1行
+        //first row
         int k = 0;
         while(k < size) {
             System.out.print("*");
@@ -23,7 +23,7 @@ public class HollowSquare {
         }
         System.out.println();
 
-        //第2行到第9行
+        //other rows(expect the first and the last)
         for (int i = 1;i < size-1; i++){
             System.out.print("*");
             for (int j = 0; j < size - 2; j++){
@@ -32,7 +32,7 @@ public class HollowSquare {
             System.out.println("*");
         }
 
-        //第10行
+        //last row
         int m = 0;
         while(m < size) {
             System.out.print("*");
