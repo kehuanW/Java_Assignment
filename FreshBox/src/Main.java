@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    //生成随机的freshbox
+    //generate the freshbox
     FreshBox freshbox = new FreshBox();
     Map <String,String> freshboxMap;
     freshboxMap = freshbox.boxGenerate();
 
-    //展示freshbox
+    //display the freshbox
     freshbox.toString(freshboxMap);
 
     ArrayList numList = new ArrayList();

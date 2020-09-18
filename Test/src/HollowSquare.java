@@ -18,7 +18,7 @@ public class HollowSquare {
         //first row
         int k = 0;
         while(k < size) {
-            System.out.print("*");
+            System.out.print("* ");
             k++;
         }
         System.out.println();
@@ -27,15 +27,16 @@ public class HollowSquare {
         for (int i = 1;i < size-1; i++){
             System.out.print("*");
             for (int j = 0; j < size - 2; j++){
-                System.out.print(" ");
+                System.out.print("  ");
             }
+
             System.out.println("*");
         }
 
         //last row
         int m = 0;
         while(m < size) {
-            System.out.print("*");
+            System.out.print("* ");
             m++;
         }
 

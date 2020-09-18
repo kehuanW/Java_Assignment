@@ -11,12 +11,8 @@ public class FreshBox {
     String[] foodArray = new String[]{"Banana", "Apple", "Cauliflower", "Potato", "Capsicum"};
     double[] priceArray = new double[]{bananaPrice,applePrice,cauliflowerPrice,potatoPrice,capsicumPrice};
 
-
-    //System.out.println(Arrays.toString(foodBox));
-
-
     public Map boxGenerate() {
-        //随机生成一个食物盒子
+        //generate a freshbox randomly
         ArrayList freshBox = new ArrayList();
         for (int i  = 0; i < 4; i++){
             freshBox.add(foodArray[(int)(Math.random() * 5)]);
@@ -34,7 +30,7 @@ public class FreshBox {
     }
 
     public void toString(Map freshboxMap) {
-        //展示随机食物盒子
+        //display the freshbox
         Map <String,Double> foodInformation = new HashMap();
         foodInformation.put("Apple",applePrice);
         foodInformation.put("Banana",bananaPrice);
@@ -54,7 +50,7 @@ public class FreshBox {
     }
 
     public void receipt(Map freshboxMap) {
-        //展示菜单
+        //display the receipt
         Map <String,Double> foodInformation = new HashMap();
         foodInformation.put("Apple",applePrice);
         foodInformation.put("Banana",bananaPrice);
@@ -76,7 +72,9 @@ public class FreshBox {
 
         }
 
-        System.out.println(" TOTAL PURCHASE $" + total);
+        System.out.print(" TOTAL PURCHASE $");
+        System.out.printf(String.format("%.1f",total));
+        System.out.println();
 
     }
 
